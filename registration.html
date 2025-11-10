@@ -54,7 +54,7 @@
       fetch("https://example.com/api/register", {
         method: "POST",
         headers: { "Content-Type": "application/json" },//Hey server, the data I’m sending is JSON (JavaScript Object Notation)
-        body: JSON.stringify(user)
+        body: JSON.stringify(user) //Because HTTP requests can only send plain text, not JavaScript objects.
       })
       .then(() => {
         alert("User Registered Successfully!");
