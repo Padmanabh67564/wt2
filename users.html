@@ -40,3 +40,122 @@
   </script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Q: What is AJAX?
+A:
+AJAX stands for Asynchronous JavaScript and XML.
+It allows a web page to send or receive data from a server without reloading the whole page.
+
+✅ In short:
+
+AJAX = update part of a webpage without refreshing it.
+
+⚙️ 2️⃣ What AJAX Does
+
+Q: Why do we use AJAX?
+A:
+To make web pages faster and more interactive by communicating with the server in the background.
+
+🧩 Example:
+When you fill a registration form and it checks your email instantly — that’s AJAX.
+
+🔄 3️⃣ Full Form
+
+Q: What is the full form of AJAX?
+A: Asynchronous JavaScript And XML
+(Even though today we often use JSON instead of XML.)
+
+⚙️ 4️⃣ Key Terms
+Term	Meaning
+Asynchronous	Tasks run in background, page doesn’t reload
+JavaScript	Used to send/receive data
+XML/JSON	Format of data exchanged
+Server	Responds to the AJAX request
+📬 5️⃣ Basic Steps of AJAX Request
+
+Q: What are the steps of an AJAX call?
+A:
+
+Create a request (using XMLHttpRequest or fetch()).
+
+Send the request to the server.
+
+Server processes it and sends a response.
+
+JavaScript updates the web page dynamically.
+
+🧩 6️⃣ Example (Modern Way)
+
+Q: What is the modern method to send AJAX requests?
+A:
+Using the fetch() API or Axios instead of old XMLHttpRequest.
+
+fetch("https://example.com/api/register", {
+  method: "POST",
+  headers: {"Content-Type": "application/json"},
+  body: JSON.stringify({name: "John", email: "john@gmail.com"})
+})
+.then(res => res.json())
+.then(data => console.log("Success", data))
+.catch(err => console.log("Error", err));
+
+💾 7️⃣ In Your Project
+
+Q: How did you use AJAX in your project?
+A (you can say this confidently):
+
+I created a user registration form that collects user details and stores them in localStorage.
+I simulated an AJAX POST request using the fetch() method to send the data — this shows how data would normally go to a server, but here it’s just simulated since there’s no real backend.
+
+🗂️ 8️⃣ localStorage (since you used it)
+
+Q: What is localStorage?
+A:
+localStorage is a browser feature that allows you to store data permanently on the client side, even after reloading the page.
+I used it to save registered users instead of a real database.
+
+🧩 9️⃣ Difference Between AJAX and Traditional Form
+Traditional Form	AJAX
+Reloads whole page	Updates part of page
+Slower	Faster
+Server returns full HTML	Server returns only data
+Less interactive	More interactive
+🌐 10️⃣ Real-Life Examples of AJAX
+
+You can mention:
+
+Live search suggestions (Google search)
+
+Login without page reload
+
+Dynamic form validation
+
+Chat apps and comment sections
+
+⚙️ 11️⃣ Old vs New Methods
+Old Method	New Method
+XMLHttpRequest	fetch() API
+More code	Simpler syntax
+Callback-based	Promise-based
+🧩 12️⃣ Short Viva Phrases You Can Remember
+
+“AJAX allows background data exchange without reloading the page.”
+
+“I used fetch() method to simulate POST request.”
+
+“localStorage was used to temporarily store user data.”-->
+
+“AJAX improves user experience and page performance.”
+
+“In real projects, AJAX connects frontend and backend.”
